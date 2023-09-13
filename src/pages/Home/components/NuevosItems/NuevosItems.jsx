@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 //@Swiper
 import Swiper from "swiper";
+import 'swiper/css/bundle';
+
 //Data
 import { slideData } from "./data";
 //Styles

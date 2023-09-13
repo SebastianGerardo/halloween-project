@@ -2,7 +2,6 @@
 .home__content {
   row-gap: 1rem;
 }
-
 .home__group {
   display: grid;
   position: relative;
