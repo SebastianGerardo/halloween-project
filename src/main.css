@@ -153,7 +153,6 @@ button {
     margin-right: var(--mb-1);
   }
 
-  .category__container,
   .trick__container {
     grid-template-columns: 0.8fr;
     justify-content: center;
@@ -192,11 +191,6 @@ button {
   
   .swiper-pagination {
     margin-top: var(--mb-2);
-  }
-
-  .category__container {
-    grid-template-columns: repeat(3, 200px);
-    justify-content: center;
   }
 
   .about__container {
@@ -262,15 +256,6 @@ button {
     margin-bottom: 3rem;
   }
   
-  /* CATEGORY */
-
-  .category__container {
-    column-gap: 8rem;
-  }
-  .category__img {
-    width: 200px;
-  }
-
   /* ABOUT */
 
   .about__container {
