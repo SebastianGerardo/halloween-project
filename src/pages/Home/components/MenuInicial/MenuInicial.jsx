@@ -30,12 +30,12 @@ export const MenuInicial = () => {
           {/* Recorro la data existente para poder generar los datos estáticos */}
           {slideData.map((slide, index) => (
             <section className="swiper-slide" key={index}>
-              <div className="tablet:tw-pt-32 tablet:tw-pr-0 tablet:tw-pb-8 tablet:tw-grid-cols-[1fr_1fr] tablet:tw-gap-16 large:tw-pt-36 large:tw-gap-12 tw-gap-y-4 tw-grid">
+              <div className="tw-pt-14 tablet:tw-pt-32 tablet:tw-pr-0 tablet:tw-pb-8 tablet:tw-grid-cols-[1fr_1fr] tablet:tw-gap-16 large:tw-pt-36 large:tw-gap-12 tw-gap-y-4 tw-grid">
                 <div className="large:tw-pt-0 tw-grid tw-relative tw-pt-8">
                   <img
                     src={slide.image}
                     alt=""
-                    className="home__img-animation tw-h-[250px] small:tw-h-[200px] tablet:tw-h-[300px] large:tw-h-[400px] large:tw-translate-y-[-3rem] desktop:tw-h-[420px] tw-justify-self-center"
+                    className="home__img-animation small:tw-h-[250px] tw-h-[200px] tablet:tw-h-[300px] large:tw-h-[400px] large:tw-translate-y-[-3rem] desktop:tw-h-[420px] tw-justify-self-center"
                   />
                   <div className="home__indicator"></div>
 
@@ -50,10 +50,10 @@ export const MenuInicial = () => {
                 </div>
 
                 <div>
-                  <h3 className="tw-text-xl tw-font-semibold tw-uppercase tw-mb-4">
+                  <h3 className="tablet:tw-text-xl tw-text-base tw-font-semibold tw-uppercase tw-mb-4">
                     # {index + 1} {slide.title}
                   </h3>
-                  <h1 className="tw-text-[64px] tw-font-black tw-leading-[109%] tw-mb-4 large:tw-mb-6">
+                  <h1 className="tablet:tw-text-[64px] tw-text-[32px] tw-font-black tw-leading-[109%] tw-mb-4 large:tw-mb-6">
                     UOOOO <br />
                     TRUCO O <br />
                     TRATO!!
