@@ -28,16 +28,6 @@
   background: none;
 }
 
-.button--link {
-  color: var(--title-color);
-}
-
-.button--flex {
-  display: inline-flex;
-  align-items: center;
-  column-gap: 0.5rem;
-}
-
 /*=============== SCROLL UP ===============*/
 .scrollup {
   position: fixed;

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 //@Swiper
 import Swiper from "swiper";
-import 'swiper/css/bundle';
+import "swiper/css/bundle";
 //Data
 import { slideData } from "./data";
 //Styles
@@ -21,45 +21,62 @@ export const MenuInicial = () => {
   }, []);
 
   return (
-    <section className="home container" id="home">
+    <section
+      className="tw-max-w-[968px] tw-mx-6 small:tw-mx-4 large:tw-mx-auto"
+      id="home"
+    >
       <div className="swiper home-swiper">
         <div className="swiper-wrapper">
           {/* Recorro la data existente para poder generar los datos estáticos */}
           {slideData.map((slide, index) => (
             <section className="swiper-slide" key={index}>
-              <div className="home__content grid">
-                <div className="home__group">
-                  <img src={slide.image} alt="" className="home__img" />
+              <div className="tablet:tw-pt-32 tablet:tw-pr-0 tablet:tw-pb-8 tablet:tw-grid-cols-[1fr_1fr] tablet:tw-gap-16 large:tw-pt-36 large:tw-gap-12 tw-gap-y-4 tw-grid">
+                <div className="large:tw-pt-0 tw-grid tw-relative tw-pt-8">
+                  <img
+                    src={slide.image}
+                    alt=""
+                    className="home__img-animation tw-h-[250px] small:tw-h-[200px] tablet:tw-h-[300px] large:tw-h-[400px] large:tw-translate-y-[-3rem] desktop:tw-h-[420px] tw-justify-self-center"
+                  />
                   <div className="home__indicator"></div>
 
-                  <div className="home__details-img">
-                    <h4 className="home__details-title">{slide.title}</h4>
-                    <span className="home__details-subtitle">
+                  <div className="large:tw-bottom-0 large:tw-right-[58%] tw-absolute tw-right-2">
+                    <h4 className="tw-block tw-text-[.813rem] tw-text-right">
+                      {slide.title}
+                    </h4>
+                    <span className="tw-block tw-text-[.813rem] tw-text-right">
                       {slide.subtitle}
                     </span>
                   </div>
                 </div>
 
-                <div className="home__data">
-                  <h3 className="home__subtitle">
+                <div>
+                  <h3 className="tw-text-xl tw-font-semibold tw-uppercase tw-mb-4">
                     # {index + 1} {slide.title}
                   </h3>
-                  <h1 className="home__title">
+                  <h1 className="tw-text-[64px] tw-font-black tw-leading-[109%] tw-mb-4 large:tw-mb-6">
                     UOOOO <br />
                     TRUCO O <br />
                     TRATO!!
                   </h1>
-                  <p className="home__description">{slide.description}</p>
+                  <p className="tw-mb-4 large:tw-mb-10 large:tw-pr-8">
+                    {slide.description}
+                  </p>
 
-                  <div className="home__buttons">
-                    <a href={slide.buttonLink} className="button">
+                  <section className="tw-w-full tw-flex tw-justify-between max-[320px]:tw-flex-col max-[320px]:tw-gap-y-4">
+                    <a
+                      href={slide.buttonLink}
+                      className="button max-[320px]:tw-w-max"
+                    >
                       {slide.buttonText}
                     </a>
-                    <a href="#" className="button--link button--flex">
+                    <a
+                      href="#"
+                      className="tw-text-white tw-inline-flex tw-items-center tw-gap-x-2 max-[320px]:tw-w-max"
+                    >
                       Audio grabado
                       <i className="bx bx-right-arrow-alt button__icon"></i>
                     </a>
-                  </div>
+                  </section>
                 </div>
               </div>
             </section>

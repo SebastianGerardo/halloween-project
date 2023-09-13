@@ -153,15 +153,6 @@ button {
     margin-right: var(--mb-1);
   }
 
-  .home__img {
-    height: 200px;
-  }
-  .home__buttons {
-    flex-direction: column;
-    width: max-content;
-    row-gap: 1rem;
-  }
-
   .category__container,
   .trick__container {
     grid-template-columns: 0.8fr;
@@ -212,14 +203,6 @@ button {
     font-weight: initial;
   }
 
-  .home__content {
-    padding: 8rem 0 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-  }
-  .home__img {
-    height: 300px;
-  }
   .swiper-pagination {
     margin-top: var(--mb-2);
   }
@@ -281,6 +264,7 @@ button {
 
 /* For large devices */
 @media screen and (min-width: 992px) {
+  /* HOME */
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -290,39 +274,8 @@ button {
     font-size: var(--h1-font-size);
     margin-bottom: 3rem;
   }
-
-  .home__content {
-    padding-top: 9rem;
-    gap: 3rem;
-  }
-  .home__group {
-    padding-top: 0;
-  }
-  .home__img {
-    height: 400px;
-    transform: translateY(-3rem);
-  }
-  .home__indicator {
-    top: initial;
-    right: initial;
-    bottom: 15%;
-    left: 45%;
-  }
-  .home__indicator::after {
-    top: 0;
-    height: 75px;
-  }
-  .home__details-img {
-    bottom: 0;
-    right: 58%;
-  }
-  .home__title {
-    margin-bottom: var(--mb-1-5);
-  }
-  .home__description {
-    margin-bottom: var(--mb-2-5);
-    padding-right: 2rem;
-  }
+  
+  /* CATEGORY */
 
   .category__container {
     column-gap: 8rem;
@@ -330,6 +283,8 @@ button {
   .category__img {
     width: 200px;
   }
+
+  /* ABOUT */
 
   .about__container {
     column-gap: 7rem;
@@ -340,6 +295,8 @@ button {
   .about__description {
     padding-right: 2rem;
   }
+
+  /* TRICK */
 
   .trick__container {
     gap: 3.5rem;
@@ -353,6 +310,8 @@ button {
   .trick__title {
     font-size: var(--h3-font-size);
   }
+
+  /* DISCOUNT */
 
   .discount__container {
     column-gap: 7rem;
@@ -374,15 +333,14 @@ button {
     font-size: var(--h3-font-size);
   }
 
+  /* FOOTER */
+
   .footer__copy {
     margin-top: 6rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .home__img {
-    height: 420px;
-  }
   .swiper-pagination {
     margin-top: var(--mb-2-5);
   }
