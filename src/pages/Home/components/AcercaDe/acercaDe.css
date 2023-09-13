@@ -1,17 +1,17 @@
 /*=============== ABOUT ===============*/
-.about__container{
+.about__container {
   row-gap: 2rem;
 }
 
-.about__data{
+.about__data {
   text-align: center;
 }
 
-.about__description{
+.about__description {
   margin-bottom: var(--mb-2);
 }
 
-.about__img{
+.about__img {
   width: 200px;
   justify-self: center;
   animation: floating 2s ease-in-out infinite;

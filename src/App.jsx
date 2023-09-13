@@ -1,6 +1,6 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { Home } from "./pages/Home/Home"
-import './main.css'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Home } from "./pages/Home/Home";
+import "./main.css";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         <Route path="/" Component={Home} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

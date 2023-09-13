@@ -1,6 +1,10 @@
 import { useState } from "react";
+//Data
+import { sliceData } from "./data";
+//Assets
 import trick_treat5 from "../../assets/img/trick-treat5-img.png";
 import nav_img from "../../assets/img/nav-img.png";
+//Styles
 import "./header.css";
 
 export const Header = () => {
@@ -27,26 +31,19 @@ export const Header = () => {
         </a>
         <div className={`nav__menu ${isMenuOpen && "show-menu"}`}>
           <ul className="nav__list">
-            <li className="nav__item">
-              <a href="#home" className="nav__link active-link" onClick={handleNavLinkClick}>
-                Home
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#Nosotros" className="nav__link" onClick={handleNavLinkClick}>
-                Nosotros
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#trick" className="nav__link" onClick={handleNavLinkClick}>
-                Candy
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#new" className="nav__link" onClick={handleNavLinkClick}>
-                New
-              </a>
-            </li>
+            {sliceData.map((opt, index) => (
+              <li key={index} className="nav__item">
+                <a
+                  href={opt.href}
+                  className={`nav__link ${
+                    index == 0 && "active-link"
+                  }`}
+                  onClick={handleNavLinkClick}
+                >
+                  {opt.label}
+                </a>
+              </li>
+            ))}
             <a href="#" className="button button--ghost">
               Soporte
             </a>

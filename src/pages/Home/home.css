@@ -1,79 +1,79 @@
 /*=============== BUTTONS ===============*/
-.button{
+.button {
   display: inline-block;
   background-color: var(--first-color);
   color: var(--title-color);
   padding: 1rem 1.75rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-weight: var(--font-medium);
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.button:hover{
+.button:hover {
   background-color: var(--first-color-alt);
 }
 
-.button__icon{
+.button__icon {
   font-size: 1.25rem;
 }
 
-.button--ghost{
+.button--ghost {
   border: 2px solid;
   background-color: transparent;
   border-radius: 3rem;
-  padding: .75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
 }
 
-.button--ghost:hover{
+.button--ghost:hover {
   background: none;
 }
 
-.button--link{
+.button--link {
   color: var(--title-color);
 }
 
-.button--flex{
+.button--flex {
   display: inline-flex;
   align-items: center;
-  column-gap: .5rem;
+  column-gap: 0.5rem;
 }
 
 /*=============== SCROLL UP ===============*/
-.scrollup{
+.scrollup {
   position: fixed;
   background: var(--container-color);
   right: 1rem;
   bottom: -20%;
   display: inline-flex;
-  padding: .3rem;
-  border-radius: .25rem;
+  padding: 0.3rem;
+  border-radius: 0.25rem;
   z-index: var(--z-tooltip);
-  opacity: .8;
-  transition: .4s;
+  opacity: 0.8;
+  transition: 0.4s;
 }
 
-.scrollup__icon{
+.scrollup__icon {
   font-size: 1.25rem;
   color: var(--title-color);
 }
 
-.scrollup:hover{
+.scrollup:hover {
   background: var(--container-color);
   opacity: 1;
 }
 
 /* Show Scroll Up*/
-.show-scroll{
+.show-scroll {
   bottom: 3rem;
 }
 
 /*=============== SCROLL BAR ===============*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0.6rem;
   background: #413e3e;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: #272525;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }

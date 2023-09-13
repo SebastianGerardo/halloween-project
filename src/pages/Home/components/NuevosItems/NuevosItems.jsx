@@ -1,9 +1,14 @@
 import { useEffect } from "react";
+//@Swiper
 import Swiper from "swiper";
+//Data
 import { slideData } from "./data";
+//Styles
 import "./nuevosItems.css";
 
 export const NuevosItems = () => {
+  
+  // Este useEffect se usa para ejecutar el swiper que es un scroll en horizontal
   useEffect(() => {
     new Swiper(".new-swiper", {
       centeredSlides: true,
@@ -20,6 +25,7 @@ export const NuevosItems = () => {
       <div className="new__container container">
         <div className="swiper new-swiper">
           <div className="swiper-wrapper">
+            {/* Recorro la data existente para poder generar los datos estáticos */}
             {slideData.map((slide, index) => (
               <div className="new__content swiper-slide" key={index}>
                 <div className="new__tag">{slide.tag}</div>
