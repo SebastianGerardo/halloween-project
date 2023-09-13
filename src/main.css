@@ -1,7 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap");
 /*=============== VARIABLES CSS ===============*/
-
 :root {
   --header-height: 3.5rem;
 
@@ -152,11 +151,6 @@ button {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
   }
-
-  .trick__container {
-    grid-template-columns: 0.8fr;
-    justify-content: center;
-  }
 }
 
 /* For medium devices */
@@ -203,12 +197,6 @@ button {
   }
   .about__img {
     width: 250px;
-  }
-
-  .trick__container {
-    grid-template-columns: repeat(3, 200px);
-    justify-content: center;
-    gap: 2rem;
   }
 
   .discount__container {
@@ -266,21 +254,6 @@ button {
   }
   .about__description {
     padding-right: 2rem;
-  }
-
-  /* TRICK */
-
-  .trick__container {
-    gap: 3.5rem;
-  }
-  .trick__content {
-    border-radius: 1.5rem;
-  }
-  .trick__img {
-    width: 110px;
-  }
-  .trick__title {
-    font-size: var(--h3-font-size);
   }
 
   /* DISCOUNT */
