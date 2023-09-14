@@ -1,5 +1,8 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
@@ -118,108 +121,15 @@ button {
   font-size: var(--normal-font-size);
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
-.section {
-  padding: 4.5rem 0 2rem;
-}
-
-.section__title {
-  font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-2);
-  text-align: center;
-}
-
-/*=============== LAYOUT ===============*/
-.container {
-  max-width: 968px;
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
-}
-
-.grid {
-  display: grid;
-}
-
-.main {
-  overflow: hidden; /*For animation*/
-}
-
 /*===============  BREAKPOINTS ===============*/
-/* For small devices */
-@media screen and (max-width: 320px) {
-  .container {
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
-  }
-}
-
-/* For medium devices */
-@media screen and (min-width: 576px) {
-  .about__container {
-    grid-template-columns: 0.8fr;
-    justify-content: center;
-  }
-}
 
 @media screen and (min-width: 767px) {
   body {
     margin: 0;
   }
 
-  .section {
-    padding: 7rem 0 2rem;
-  }
-
-  .nav {
-    height: calc(var(--header-height) + 1.5rem);
-  }
-  
   .swiper-pagination {
     margin-top: var(--mb-2);
-  }
-
-  .about__container {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-  }
-  .about__title,
-  .about__data {
-    text-align: initial;
-  }
-  .about__img {
-    width: 250px;
-  }
-
-  .footer__img-two {
-    right: initial;
-    bottom: 0;
-    left: 15%;
-  }
-}
-
-/* For large devices */
-@media screen and (min-width: 992px) {
-  /* HOME */
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .section__title {
-    font-size: var(--h1-font-size);
-    margin-bottom: 3rem;
-  }
-  
-  /* ABOUT */
-
-  .about__container {
-    column-gap: 7rem;
-  }
-  .about__img {
-    width: 350px;
-  }
-  .about__description {
-    padding-right: 2rem;
   }
 }
 
@@ -241,7 +151,3 @@ button {
     transform: translate(0, -0px);
   }
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

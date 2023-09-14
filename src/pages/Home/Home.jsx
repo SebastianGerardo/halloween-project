@@ -43,7 +43,7 @@ export const Home = () => {
     <div>
       {/* Encabezado */}
       <Header />
-      <main className="main">
+      <main className="tw-overflow-hidden">
         {/* Componentes que se van a mostrar en esta layout */}
         <MenuInicial />
         <Categorias />

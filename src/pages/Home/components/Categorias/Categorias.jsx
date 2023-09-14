@@ -8,7 +8,7 @@ export const Categorias = () => (
       Categorias
     </h2>
 
-    <div className="tw-grid tw-grid-cols-[1fr_1fr] tw-gap-y-4 tw-gap-x-8 max-[320px]:tw-grid-cols-[0.8fr] max-[320px]:tw-justify-center tablet:tw-grid-cols-[200px_200px_200px] tablet:tw-justify-center large:tw-gap-x-32 container">
+    <div className="tw-grid tw-grid-cols-[1fr_1fr] tw-gap-y-4 tw-gap-x-8 max-[320px]:tw-grid-cols-[0.8fr] max-[320px]:tw-justify-center tablet:tw-grid-cols-[200px_200px_200px] tablet:tw-justify-center large:tw-gap-x-32 tw-max-w-[968px] tw-mx-6 max-[320px]:tw-mx-[1rem] large:tw-mx-auto">
       {/* Recorro la data existente para poder generar los datos estáticos */}
       {sliceData.map((opt, index) => (
         <div key={index} className="category__data tw-text-center tw-group">

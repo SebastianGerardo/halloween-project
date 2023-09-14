@@ -2,6 +2,7 @@ import { useEffect } from "react";
 //@Swiper
 import Swiper from "swiper";
 import "swiper/css/bundle";
+import 'swiper/css';
 //Data
 import { slideData } from "./data";
 //Styles
@@ -65,7 +66,8 @@ export const MenuInicial = () => {
                   <section className="tw-w-full tw-flex tw-justify-between max-[320px]:tw-flex-col max-[320px]:tw-gap-y-4">
                     <a
                       href={slide.buttonLink}
-                      className="button max-[320px]:tw-w-max"
+                      className="tw-inline-block tw-bg-[#F4511F] hover:tw-bg-[#F4420B] tw-text-white tw-py-4 tw-px-[1.75rem] tw-rounded-lg tw-font-medium 
+                                 tw-transition tw-duration-[.3s] max-[320px]:tw-w-max"
                     >
                       {slide.buttonText}
                     </a>
@@ -74,7 +76,7 @@ export const MenuInicial = () => {
                       className="tw-text-white tw-inline-flex tw-items-center tw-gap-x-2 max-[320px]:tw-w-max"
                     >
                       Audio grabado
-                      <i className="bx bx-right-arrow-alt button__icon"></i>
+                      <i className="bx bx-right-arrow-alt tw-text-[1.25rem]"></i>
                     </a>
                   </section>
                 </div>

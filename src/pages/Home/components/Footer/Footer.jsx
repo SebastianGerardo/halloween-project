@@ -69,9 +69,9 @@ export const Footer = () => (
       &#169; Halloween page by <a href="" className="tw-text-[#551a8b]">DevSolutionsa</a>{" "}
     </span>
 
-    <img src={footer1} alt="" className="footer__img-one tw-absolute tw-transition tw-duration-[.3s] tw-w-[100px] 
+    <img src={footer1} alt="" className="tw-absolute tw-transition tw-duration-[.3s] tw-w-[100px] 
                                          tw-top-24 -tw-right-8 hover:-tw-translate-y-2 desktop:tw-w-[120px]" />
-    <img src={footer2} alt="" className="footer__img-two tw-absolute tw-transition tw-duration-[.3s] tw-w-[150px] 
+    <img src={footer2} alt="" className="tw-absolute tw-transition tw-duration-[.3s] tw-w-[150px] 
                                          tw-bottom-16 tw-right-16 hover:-tw-translate-y-2 desktop:tw-w-[180px] 
                                          desktop:tw-top-[30%] desktop:-tw-left-[3%] tablet:tw-right-[initial] 
                                          tablet:tw-bottom-0 tablet:tw-left-[15%]" />

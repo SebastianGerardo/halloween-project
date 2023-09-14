@@ -23,20 +23,6 @@
   right: 45%;
 }
 
-@media screen and (min-width: 992px) {
-  .home__indicator {
-    top: initial;
-    right: initial;
-    bottom: 15%;
-    left: 45%;
-  }
-
-  .home__indicator::after {
-    top: 0;
-    height: 75px;
-  }
-}
-
 /* Swiper className */
 .swiper-pagination {
   position: initial;
@@ -59,4 +45,18 @@
   width: 1.5rem;
   height: 5px;
   border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .home__indicator {
+    top: initial;
+    right: initial;
+    bottom: 15%;
+    left: 45%;
+  }
+
+  .home__indicator::after {
+    top: 0;
+    height: 75px;
+  }
 }

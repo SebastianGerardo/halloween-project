@@ -4,10 +4,6 @@ export default {
   prefix: 'tw-',
   theme: {
     extend: {
-      colors: {},
-      gradientColors: {
-        body_color: ["90deg", "hsl(23, 84%, 75%)", "hsl(9, 92%, 54%)"],
-      },
       screens: {
         'small': '320px',
         'medium': '576px',
